@@ -57,8 +57,8 @@ ${data.tests}
 
 ## Questions
 
-${data.username}
-${data.email}`;
+[Link to my GitHub](https://github.com/${data.username})
+${data.email} - Send an Email if you have any questions.`;
 }
 
 module.exports = generateMarkdown;
