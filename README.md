@@ -34,4 +34,9 @@ THEN I am taken to the corresponding section of the README
 
 If the user opens the terminal for the folder of the project and types “node index.js” the terminal will start going through a list of prompts. Once all the prompts are completed the terminal will say “success!” and a new file “sampleREADME.md” will be created.
 
+## Repo
+https://github.com/hayessea000/readme-generator
+
 ## Video of use
+https://drive.google.com/file/d/1NQ4Y37LLzjkxU-KHQJakoTpATzCzsA0p/view
+![Here's a screenshot of the readme](./images/sampleREADME.PNG)
