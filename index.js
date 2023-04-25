@@ -26,7 +26,6 @@ const questions = [
       name: 'usage',
     },
     {
-        // fix this
         type: 'list',
         message: 'What license do you need?',
         name: 'license',
