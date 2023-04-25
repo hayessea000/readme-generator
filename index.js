@@ -30,7 +30,7 @@ const questions = [
         type: 'list',
         message: 'What license do you need?',
         name: 'license',
-        choices: ['HTML', 'CSS', 'JavaScript', 'MySQL'],
+        choices: ['Apache License 2.0', 'GNU General Public License v3.0', 'MIT License', 'None'],
     },
     {
       type: 'input',

@@ -1,23 +1,27 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge(license) {}
-
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
-function renderLicenseLink(license) {}
-
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
-function renderLicenseSection(license) {}
-
-// TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
+  let licenseBadge = ''
+  let licenseLink = ''
+  if (data.license === 'Apache License 2.0') {
+    licenseBadge= '![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)';
+    licenseLink= `## License
+  [Link to License](https://opensource.org/licenses/Apache-2.0)`;
+  } else if (data.license === 'GNU General Public License v3.0') {
+    licenseBadge= '![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)';
+    licenseLink= `## License
+  [Link to License](https://www.gnu.org/licenses/gpl-3.0)`;
+  } else if (data.license === 'MIT License') {
+    licenseBadge= '![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)';
+    licenseLink= `## License
+  [Link to License](https://opensource.org/licenses/MIT)`;
+  }
   return `# ${data.title}
-  
+
+${licenseBadge}
 ## Description
 
 ${data.description}
-
 
 ## Table of Contents (Optional)
 
@@ -29,35 +33,28 @@ ${data.description}
 - [Tests](#tests)
 - [Questions](#questions)
 
-
 ## Installation
 
 ${data.installation}
-
 
 ## Usage
 
 ${data.usage}
 
-
 ## Contributing
 
 ${data.contributing}
 
-
-## License
-
-The last section of a high-quality README file is the license. This lets other developers know what they can and cannot do with your project. If you need help choosing a license, refer to [https://choosealicense.com/](https://choosealicense.com/).
-
+${licenseLink}
   
 ## Tests
 
 ${data.tests}
 
-
 ## Questions
 
 [Link to my GitHub](https://github.com/${data.username})
+
 ${data.email} - Send an Email if you have any questions.`;
 }
 
